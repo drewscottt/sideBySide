@@ -1,0 +1,19 @@
+{
+    "name": "Side By Side",
+    "description": "Search for items \"side by side\" to directly compare celebrity lookalikes, city skylines or dog breeds--the options are endless.",
+    "version": "0.0.0.1",
+    "content_scripts": [{
+        "matches": ["https://www.google.com/*"],
+        "js": ["contentScript.js"]
+    }],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["tabs"],
+    "icons": {
+        "16": "/assets/logo16.png",
+        "48": "/assets/logo48.png",
+        "128": "/assets/logo128.png"
+    },
+    "manifest_version": 3
+}
